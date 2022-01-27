@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Program to find the largest of three number.</h1>
+    <form>
+      <label>Enter the three number: </label> <br />
+      <input id="first-input" type="number" /> <br />
+      <input id="second-input" type="number" /> <br />
+      <input id="third-input" type="number" /> <br />
+      <button onclick="func()" type="submit">Submit</button>
+    </form>
+    <script>
+      function func() {
+        var f1 = document.getElementById("first-input").value;
+        var f2 = document.getElementById("second-input").value;
+        var f3 = document.getElementById("third-input").value;
+        if (f1 > f2 && f1 > f3) {
+          alert("largest: " + f1);
+        } else if (f2 > f3 && f2 > f1) {
+          alert("largest: " + f2);
+        } else if ((f1 === f2) === f3) {
+          alert("All are equal");
+        } else {
+          alert("largest: " + f3);
+        }
+      }
+    </script>
+  </body>
+</html>
